@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **mongo_aggregate_post**
-> [DatasetSQLAlchemy] mongo_aggregate_post(body)
+> [Dataset] mongo_aggregate_post(body)
 
 Aggregate the datasets a user has access to.
 
@@ -23,7 +23,7 @@ import time
 import dtool_lookup_openapi_client
 from dtool_lookup_openapi_client.api import mongo_api
 from dtool_lookup_openapi_client.model.pagination_metadata import PaginationMetadata
-from dtool_lookup_openapi_client.model.dataset_sql_alchemy import DatasetSQLAlchemy
+from dtool_lookup_openapi_client.model.dataset import Dataset
 from dtool_lookup_openapi_client.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
@@ -79,7 +79,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[DatasetSQLAlchemy]**](DatasetSQLAlchemy.md)
+[**[Dataset]**](Dataset.md)
 
 ### Authorization
 
@@ -174,7 +174,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **mongo_query_post**
-> [DatasetSQLAlchemy] mongo_query_post(body)
+> [Dataset] mongo_query_post(body)
 
 Query datasets a user has access to.
 
@@ -187,7 +187,7 @@ import time
 import dtool_lookup_openapi_client
 from dtool_lookup_openapi_client.api import mongo_api
 from dtool_lookup_openapi_client.model.pagination_metadata import PaginationMetadata
-from dtool_lookup_openapi_client.model.dataset_sql_alchemy import DatasetSQLAlchemy
+from dtool_lookup_openapi_client.model.dataset import Dataset
 from dtool_lookup_openapi_client.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
@@ -243,7 +243,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[DatasetSQLAlchemy]**](DatasetSQLAlchemy.md)
+[**[Dataset]**](Dataset.md)
 
 ### Authorization
 

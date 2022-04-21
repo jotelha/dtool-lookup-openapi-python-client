@@ -82,7 +82,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **graph_lookup_uuid_get**
-> [DatasetSQLAlchemy] graph_lookup_uuid_get(uuid)
+> [Dataset] graph_lookup_uuid_get(uuid)
 
 List the datasets within the same dependency graph as <uuid>. If not all datasets are accessible by the user, an incomplete, disconnected graph may arise.
 
@@ -95,7 +95,7 @@ import time
 import dtool_lookup_openapi_client
 from dtool_lookup_openapi_client.api import graph_api
 from dtool_lookup_openapi_client.model.pagination_metadata import PaginationMetadata
-from dtool_lookup_openapi_client.model.dataset_sql_alchemy import DatasetSQLAlchemy
+from dtool_lookup_openapi_client.model.dataset import Dataset
 from dtool_lookup_openapi_client.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
@@ -151,7 +151,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[DatasetSQLAlchemy]**](DatasetSQLAlchemy.md)
+[**[Dataset]**](Dataset.md)
 
 ### Authorization
 
@@ -174,7 +174,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **graph_lookup_uuid_post**
-> [DatasetSQLAlchemy] graph_lookup_uuid_post(uuid, dependency_keys)
+> [Dataset] graph_lookup_uuid_post(uuid, dependency_keys)
 
 List the datasets within the same dependency graph as <uuid>. If not all datasets are accessible by the user, an incomplete, disconnected graph may arise.
 
@@ -187,7 +187,7 @@ import time
 import dtool_lookup_openapi_client
 from dtool_lookup_openapi_client.api import graph_api
 from dtool_lookup_openapi_client.model.pagination_metadata import PaginationMetadata
-from dtool_lookup_openapi_client.model.dataset_sql_alchemy import DatasetSQLAlchemy
+from dtool_lookup_openapi_client.model.dataset import Dataset
 from dtool_lookup_openapi_client.model.dependency_keys import DependencyKeys
 from dtool_lookup_openapi_client.model.error import Error
 from pprint import pprint
@@ -250,7 +250,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[DatasetSQLAlchemy]**](DatasetSQLAlchemy.md)
+[**[Dataset]**](Dataset.md)
 
 ### Authorization
 

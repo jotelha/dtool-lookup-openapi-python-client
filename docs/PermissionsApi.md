@@ -130,13 +130,13 @@ with dtool_lookup_openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = permissions_api.PermissionsApi(api_client)
     uri_permission = UriPermission(
-        users_with_register_permissions=[
-            "users_with_register_permissions_example",
-        ],
         users_with_search_permissions=[
             "users_with_search_permissions_example",
         ],
         base_uri="base_uri_example",
+        users_with_register_permissions=[
+            "users_with_register_permissions_example",
+        ],
     ) # UriPermission | 
 
     # example passing only required values which don't have defaults set

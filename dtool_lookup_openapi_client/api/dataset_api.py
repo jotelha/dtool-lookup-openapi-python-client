@@ -21,7 +21,7 @@ from dtool_lookup_openapi_client.model_utils import (  # noqa: F401
     none_type,
     validate_and_convert_types
 )
-from dtool_lookup_openapi_client.model.dataset_sql_alchemy import DatasetSQLAlchemy
+from dtool_lookup_openapi_client.model.dataset import Dataset
 from dtool_lookup_openapi_client.model.error import Error
 from dtool_lookup_openapi_client.model.pagination_metadata import PaginationMetadata
 from dtool_lookup_openapi_client.model.register_dataset import RegisterDataset
@@ -95,7 +95,7 @@ class DatasetApi(object):
         )
         self.dataset_list_get_endpoint = _Endpoint(
             settings={
-                'response_type': ([DatasetSQLAlchemy],),
+                'response_type': ([Dataset],),
                 'auth': [
                     'bearerAuth'
                 ],
@@ -160,7 +160,7 @@ class DatasetApi(object):
         )
         self.dataset_lookup_uuid_get_endpoint = _Endpoint(
             settings={
-                'response_type': ([DatasetSQLAlchemy],),
+                'response_type': ([Dataset],),
                 'auth': [
                     'bearerAuth'
                 ],
@@ -393,7 +393,7 @@ class DatasetApi(object):
         )
         self.dataset_search_post_endpoint = _Endpoint(
             settings={
-                'response_type': ([DatasetSQLAlchemy],),
+                'response_type': ([Dataset],),
                 'auth': [
                     'bearerAuth'
                 ],
@@ -639,7 +639,7 @@ class DatasetApi(object):
             async_req (bool): execute request asynchronously
 
         Returns:
-            [DatasetSQLAlchemy]
+            [Dataset]
                 If the method is called asynchronously, returns the request
                 thread.
         """
@@ -721,7 +721,7 @@ class DatasetApi(object):
             async_req (bool): execute request asynchronously
 
         Returns:
-            [DatasetSQLAlchemy]
+            [Dataset]
                 If the method is called asynchronously, returns the request
                 thread.
         """
@@ -1051,7 +1051,7 @@ class DatasetApi(object):
             async_req (bool): execute request asynchronously
 
         Returns:
-            [DatasetSQLAlchemy]
+            [Dataset]
                 If the method is called asynchronously, returns the request
                 thread.
         """

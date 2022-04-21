@@ -24,7 +24,7 @@ from dtool_lookup_openapi_client.model_utils import (  # noqa: F401
 from dtool_lookup_openapi_client.model.error import Error
 from dtool_lookup_openapi_client.model.pagination_metadata import PaginationMetadata
 from dtool_lookup_openapi_client.model.register_user import RegisterUser
-from dtool_lookup_openapi_client.model.user_sql_alchemy import UserSQLAlchemy
+from dtool_lookup_openapi_client.model.user import User
 
 
 class UserAdminApi(object):
@@ -40,7 +40,7 @@ class UserAdminApi(object):
         self.api_client = api_client
         self.admin_user_list_get_endpoint = _Endpoint(
             settings={
-                'response_type': ([UserSQLAlchemy],),
+                'response_type': ([User],),
                 'auth': [
                     'bearerAuth'
                 ],
@@ -205,7 +205,7 @@ class UserAdminApi(object):
             async_req (bool): execute request asynchronously
 
         Returns:
-            [UserSQLAlchemy]
+            [User]
                 If the method is called asynchronously, returns the request
                 thread.
         """

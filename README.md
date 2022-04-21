@@ -123,7 +123,7 @@ Class | Method | HTTP request | Description
 
  - [BaseURI](docs/BaseURI.md)
  - [BaseURISQLAlchemy](docs/BaseURISQLAlchemy.md)
- - [DatasetSQLAlchemy](docs/DatasetSQLAlchemy.md)
+ - [Dataset](docs/Dataset.md)
  - [DependencyKeys](docs/DependencyKeys.md)
  - [Error](docs/Error.md)
  - [Item](docs/Item.md)
@@ -135,8 +135,8 @@ Class | Method | HTTP request | Description
  - [Summary](docs/Summary.md)
  - [URI](docs/URI.md)
  - [UriPermission](docs/UriPermission.md)
+ - [User](docs/User.md)
  - [UserResponse](docs/UserResponse.md)
- - [UserSQLAlchemy](docs/UserSQLAlchemy.md)
 
 
 ## Documentation For Authorization

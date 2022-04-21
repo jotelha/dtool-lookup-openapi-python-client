@@ -81,13 +81,13 @@ class Summary(ModelNormal):
                 and the value is attribute type.
         """
         return {
-            'datasets_per_creator': ({str: (int,)},),  # noqa: E501
             'datasets_per_base_uri': ({str: (int,)},),  # noqa: E501
-            'datasets_per_tag': ({str: (int,)},),  # noqa: E501
             'base_uris': ([str],),  # noqa: E501
+            'datasets_per_tag': ({str: (int,)},),  # noqa: E501
+            'creator_usernames': ([str],),  # noqa: E501
+            'datasets_per_creator': ({str: (int,)},),  # noqa: E501
             'number_of_datasets': (int,),  # noqa: E501
             'tags': ([str],),  # noqa: E501
-            'creator_usernames': ([str],),  # noqa: E501
         }
 
     @cached_property
@@ -96,13 +96,13 @@ class Summary(ModelNormal):
 
 
     attribute_map = {
-        'datasets_per_creator': 'datasets_per_creator',  # noqa: E501
         'datasets_per_base_uri': 'datasets_per_base_uri',  # noqa: E501
-        'datasets_per_tag': 'datasets_per_tag',  # noqa: E501
         'base_uris': 'base_uris',  # noqa: E501
+        'datasets_per_tag': 'datasets_per_tag',  # noqa: E501
+        'creator_usernames': 'creator_usernames',  # noqa: E501
+        'datasets_per_creator': 'datasets_per_creator',  # noqa: E501
         'number_of_datasets': 'number_of_datasets',  # noqa: E501
         'tags': 'tags',  # noqa: E501
-        'creator_usernames': 'creator_usernames',  # noqa: E501
     }
 
     read_only_vars = {
@@ -146,13 +146,13 @@ class Summary(ModelNormal):
                                 Animal class but this time we won't travel
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
-            datasets_per_creator ({str: (int,)}): [optional]  # noqa: E501
             datasets_per_base_uri ({str: (int,)}): [optional]  # noqa: E501
-            datasets_per_tag ({str: (int,)}): [optional]  # noqa: E501
             base_uris ([str]): [optional]  # noqa: E501
+            datasets_per_tag ({str: (int,)}): [optional]  # noqa: E501
+            creator_usernames ([str]): [optional]  # noqa: E501
+            datasets_per_creator ({str: (int,)}): [optional]  # noqa: E501
             number_of_datasets (int): [optional]  # noqa: E501
             tags ([str]): [optional]  # noqa: E501
-            creator_usernames ([str]): [optional]  # noqa: E501
         """
 
         _check_type = kwargs.pop('_check_type', True)
@@ -238,13 +238,13 @@ class Summary(ModelNormal):
                                 Animal class but this time we won't travel
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
-            datasets_per_creator ({str: (int,)}): [optional]  # noqa: E501
             datasets_per_base_uri ({str: (int,)}): [optional]  # noqa: E501
-            datasets_per_tag ({str: (int,)}): [optional]  # noqa: E501
             base_uris ([str]): [optional]  # noqa: E501
+            datasets_per_tag ({str: (int,)}): [optional]  # noqa: E501
+            creator_usernames ([str]): [optional]  # noqa: E501
+            datasets_per_creator ({str: (int,)}): [optional]  # noqa: E501
             number_of_datasets (int): [optional]  # noqa: E501
             tags ([str]): [optional]  # noqa: E501
-            creator_usernames ([str]): [optional]  # noqa: E501
         """
 
         _check_type = kwargs.pop('_check_type', True)

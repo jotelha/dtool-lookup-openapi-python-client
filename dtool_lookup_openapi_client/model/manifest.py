@@ -87,9 +87,9 @@ class Manifest(ModelNormal):
         """
         lazy_import()
         return {
-            'hash_function': (str,),  # noqa: E501
             'dtoolcore_version': (str,),  # noqa: E501
             'items': ({str: (Item,)},),  # noqa: E501
+            'hash_function': (str,),  # noqa: E501
         }
 
     @cached_property
@@ -98,9 +98,9 @@ class Manifest(ModelNormal):
 
 
     attribute_map = {
-        'hash_function': 'hash_function',  # noqa: E501
         'dtoolcore_version': 'dtoolcore_version',  # noqa: E501
         'items': 'items',  # noqa: E501
+        'hash_function': 'hash_function',  # noqa: E501
     }
 
     read_only_vars = {
@@ -144,9 +144,9 @@ class Manifest(ModelNormal):
                                 Animal class but this time we won't travel
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
-            hash_function (str): [optional]  # noqa: E501
             dtoolcore_version (str): [optional]  # noqa: E501
             items ({str: (Item,)}): [optional]  # noqa: E501
+            hash_function (str): [optional]  # noqa: E501
         """
 
         _check_type = kwargs.pop('_check_type', True)
@@ -232,9 +232,9 @@ class Manifest(ModelNormal):
                                 Animal class but this time we won't travel
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
-            hash_function (str): [optional]  # noqa: E501
             dtoolcore_version (str): [optional]  # noqa: E501
             items ({str: (Item,)}): [optional]  # noqa: E501
+            hash_function (str): [optional]  # noqa: E501
         """
 
         _check_type = kwargs.pop('_check_type', True)

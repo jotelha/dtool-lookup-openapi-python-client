@@ -81,10 +81,10 @@ class UserResponse(ModelNormal):
                 and the value is attribute type.
         """
         return {
-            'search_permissions_on_base_uris': ([str],),  # noqa: E501
-            'register_permissions_on_base_uris': ([str],),  # noqa: E501
-            'username': (str,),  # noqa: E501
             'is_admin': (bool,),  # noqa: E501
+            'username': (str,),  # noqa: E501
+            'register_permissions_on_base_uris': ([str],),  # noqa: E501
+            'search_permissions_on_base_uris': ([str],),  # noqa: E501
         }
 
     @cached_property
@@ -93,10 +93,10 @@ class UserResponse(ModelNormal):
 
 
     attribute_map = {
-        'search_permissions_on_base_uris': 'search_permissions_on_base_uris',  # noqa: E501
-        'register_permissions_on_base_uris': 'register_permissions_on_base_uris',  # noqa: E501
-        'username': 'username',  # noqa: E501
         'is_admin': 'is_admin',  # noqa: E501
+        'username': 'username',  # noqa: E501
+        'register_permissions_on_base_uris': 'register_permissions_on_base_uris',  # noqa: E501
+        'search_permissions_on_base_uris': 'search_permissions_on_base_uris',  # noqa: E501
     }
 
     read_only_vars = {
@@ -140,10 +140,10 @@ class UserResponse(ModelNormal):
                                 Animal class but this time we won't travel
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
-            search_permissions_on_base_uris ([str]): [optional]  # noqa: E501
-            register_permissions_on_base_uris ([str]): [optional]  # noqa: E501
-            username (str): [optional]  # noqa: E501
             is_admin (bool): [optional]  # noqa: E501
+            username (str): [optional]  # noqa: E501
+            register_permissions_on_base_uris ([str]): [optional]  # noqa: E501
+            search_permissions_on_base_uris ([str]): [optional]  # noqa: E501
         """
 
         _check_type = kwargs.pop('_check_type', True)
@@ -229,10 +229,10 @@ class UserResponse(ModelNormal):
                                 Animal class but this time we won't travel
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
-            search_permissions_on_base_uris ([str]): [optional]  # noqa: E501
-            register_permissions_on_base_uris ([str]): [optional]  # noqa: E501
-            username (str): [optional]  # noqa: E501
             is_admin (bool): [optional]  # noqa: E501
+            username (str): [optional]  # noqa: E501
+            register_permissions_on_base_uris ([str]): [optional]  # noqa: E501
+            search_permissions_on_base_uris ([str]): [optional]  # noqa: E501
         """
 
         _check_type = kwargs.pop('_check_type', True)

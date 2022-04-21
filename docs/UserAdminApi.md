@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **admin_user_list_get**
-> [UserSQLAlchemy] admin_user_list_get()
+> [User] admin_user_list_get()
 
 List the users in the dtool lookup server.
 
@@ -24,7 +24,7 @@ import time
 import dtool_lookup_openapi_client
 from dtool_lookup_openapi_client.api import user_admin_api
 from dtool_lookup_openapi_client.model.pagination_metadata import PaginationMetadata
-from dtool_lookup_openapi_client.model.user_sql_alchemy import UserSQLAlchemy
+from dtool_lookup_openapi_client.model.user import User
 from dtool_lookup_openapi_client.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
@@ -70,7 +70,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[UserSQLAlchemy]**](UserSQLAlchemy.md)
+[**[User]**](User.md)
 
 ### Authorization
 
@@ -132,8 +132,8 @@ with dtool_lookup_openapi_client.ApiClient(configuration) as api_client:
     api_instance = user_admin_api.UserAdminApi(api_client)
     register_user = [
         RegisterUser(
-            username="username_example",
             is_admin=True,
+            username="username_example",
         ),
     ] # [RegisterUser] | 
 

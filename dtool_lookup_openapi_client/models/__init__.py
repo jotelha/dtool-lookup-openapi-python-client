@@ -11,7 +11,7 @@
 
 from dtool_lookup_openapi_client.model.base_uri import BaseURI
 from dtool_lookup_openapi_client.model.base_urisql_alchemy import BaseURISQLAlchemy
-from dtool_lookup_openapi_client.model.dataset_sql_alchemy import DatasetSQLAlchemy
+from dtool_lookup_openapi_client.model.dataset import Dataset
 from dtool_lookup_openapi_client.model.dependency_keys import DependencyKeys
 from dtool_lookup_openapi_client.model.error import Error
 from dtool_lookup_openapi_client.model.item import Item
@@ -23,5 +23,5 @@ from dtool_lookup_openapi_client.model.search_dataset import SearchDataset
 from dtool_lookup_openapi_client.model.summary import Summary
 from dtool_lookup_openapi_client.model.uri import URI
 from dtool_lookup_openapi_client.model.uri_permission import UriPermission
+from dtool_lookup_openapi_client.model.user import User
 from dtool_lookup_openapi_client.model.user_response import UserResponse
-from dtool_lookup_openapi_client.model.user_sql_alchemy import UserSQLAlchemy

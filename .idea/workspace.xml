@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="59a995ab-2df9-4c4d-98a5-e08747685379" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.openapi-generator/FILES" beforeDir="false" afterPath="$PROJECT_DIR$/.openapi-generator/FILES" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/DatasetApi.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/DatasetApi.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Error.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Error.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/GraphApi.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/GraphApi.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Item.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Item.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Manifest.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Manifest.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/MongoApi.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/MongoApi.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/PermissionsApi.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/PermissionsApi.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/RegisterDataset.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/RegisterDataset.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/SearchDataset.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/SearchDataset.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Summary.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Summary.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/UriPermission.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/UriPermission.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/UserAdminApi.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/UserAdminApi.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/UserResponse.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/UserResponse.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtool_lookup_openapi_client/api/dataset_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/dtool_lookup_openapi_client/api/dataset_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtool_lookup_openapi_client/api/graph_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/dtool_lookup_openapi_client/api/graph_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtool_lookup_openapi_client/api/mongo_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/dtool_lookup_openapi_client/api/mongo_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtool_lookup_openapi_client/api/user_admin_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/dtool_lookup_openapi_client/api/user_admin_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtool_lookup_openapi_client/model/base_uri.py" beforeDir="false" afterPath="$PROJECT_DIR$/dtool_lookup_openapi_client/model/base_uri.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtool_lookup_openapi_client/model/error.py" beforeDir="false" afterPath="$PROJECT_DIR$/dtool_lookup_openapi_client/model/error.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtool_lookup_openapi_client/model/item.py" beforeDir="false" afterPath="$PROJECT_DIR$/dtool_lookup_openapi_client/model/item.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtool_lookup_openapi_client/model/manifest.py" beforeDir="false" afterPath="$PROJECT_DIR$/dtool_lookup_openapi_client/model/manifest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtool_lookup_openapi_client/model/register_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/dtool_lookup_openapi_client/model/register_dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtool_lookup_openapi_client/model/search_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/dtool_lookup_openapi_client/model/search_dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtool_lookup_openapi_client/model/summary.py" beforeDir="false" afterPath="$PROJECT_DIR$/dtool_lookup_openapi_client/model/summary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtool_lookup_openapi_client/model/uri_permission.py" beforeDir="false" afterPath="$PROJECT_DIR$/dtool_lookup_openapi_client/model/uri_permission.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtool_lookup_openapi_client/model/user_response.py" beforeDir="false" afterPath="$PROJECT_DIR$/dtool_lookup_openapi_client/model/user_response.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtool_lookup_openapi_client/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/dtool_lookup_openapi_client/models/__init__.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2876DO34btGDhyjOSO6N1H6e5RG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="59a995ab-2df9-4c4d-98a5-e08747685379" name="Changes" comment="" />
+      <created>1650555156970</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1650555156970</updated>
+    </task>
+    <servers />
+  </component>
+</project>

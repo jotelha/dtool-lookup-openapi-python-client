@@ -21,7 +21,7 @@ from dtool_lookup_openapi_client.model_utils import (  # noqa: F401
     none_type,
     validate_and_convert_types
 )
-from dtool_lookup_openapi_client.model.dataset_sql_alchemy import DatasetSQLAlchemy
+from dtool_lookup_openapi_client.model.dataset import Dataset
 from dtool_lookup_openapi_client.model.error import Error
 from dtool_lookup_openapi_client.model.pagination_metadata import PaginationMetadata
 
@@ -39,7 +39,7 @@ class MongoApi(object):
         self.api_client = api_client
         self.mongo_aggregate_post_endpoint = _Endpoint(
             settings={
-                'response_type': ([DatasetSQLAlchemy],),
+                'response_type': ([Dataset],),
                 'auth': [
                     'bearerAuth'
                 ],
@@ -156,7 +156,7 @@ class MongoApi(object):
         )
         self.mongo_query_post_endpoint = _Endpoint(
             settings={
-                'response_type': ([DatasetSQLAlchemy],),
+                'response_type': ([Dataset],),
                 'auth': [
                     'bearerAuth'
                 ],
@@ -279,7 +279,7 @@ class MongoApi(object):
             async_req (bool): execute request asynchronously
 
         Returns:
-            [DatasetSQLAlchemy]
+            [Dataset]
                 If the method is called asynchronously, returns the request
                 thread.
         """
@@ -440,7 +440,7 @@ class MongoApi(object):
             async_req (bool): execute request asynchronously
 
         Returns:
-            [DatasetSQLAlchemy]
+            [Dataset]
                 If the method is called asynchronously, returns the request
                 thread.
         """

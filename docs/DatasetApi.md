@@ -95,7 +95,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **dataset_list_get**
-> [DatasetSQLAlchemy] dataset_list_get()
+> [Dataset] dataset_list_get()
 
 List the datasets a user has access to.
 
@@ -108,7 +108,7 @@ import time
 import dtool_lookup_openapi_client
 from dtool_lookup_openapi_client.api import dataset_api
 from dtool_lookup_openapi_client.model.pagination_metadata import PaginationMetadata
-from dtool_lookup_openapi_client.model.dataset_sql_alchemy import DatasetSQLAlchemy
+from dtool_lookup_openapi_client.model.dataset import Dataset
 from dtool_lookup_openapi_client.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
@@ -154,7 +154,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[DatasetSQLAlchemy]**](DatasetSQLAlchemy.md)
+[**[Dataset]**](Dataset.md)
 
 ### Authorization
 
@@ -177,7 +177,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **dataset_lookup_uuid_get**
-> [DatasetSQLAlchemy] dataset_lookup_uuid_get(uuid)
+> [Dataset] dataset_lookup_uuid_get(uuid)
 
 List all instances of a dataset in any base_uris the user has access to.
 
@@ -190,7 +190,7 @@ import time
 import dtool_lookup_openapi_client
 from dtool_lookup_openapi_client.api import dataset_api
 from dtool_lookup_openapi_client.model.pagination_metadata import PaginationMetadata
-from dtool_lookup_openapi_client.model.dataset_sql_alchemy import DatasetSQLAlchemy
+from dtool_lookup_openapi_client.model.dataset import Dataset
 from dtool_lookup_openapi_client.model.error import Error
 from pprint import pprint
 # Defining the host is optional and defaults to http://localhost
@@ -246,7 +246,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[DatasetSQLAlchemy]**](DatasetSQLAlchemy.md)
+[**[Dataset]**](Dataset.md)
 
 ### Authorization
 
@@ -464,31 +464,31 @@ with dtool_lookup_openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dataset_api.DatasetApi(api_client)
     register_dataset = RegisterDataset(
+        annotations={},
+        type="type_example",
+        base_uri="base_uri_example",
+        readme={},
+        uri="uri_example",
+        creator_username="creator_username_example",
+        uuid="uuid_example",
         manifest=Manifest(
-            hash_function="hash_function_example",
             dtoolcore_version="dtoolcore_version_example",
             items={
                 "key": Item(
+                    utc_timestamp=3.14,
                     relpath="relpath_example",
                     size_in_bytes=1,
                     hash="hash_example",
-                    utc_timestamp=3.14,
                 ),
             },
+            hash_function="hash_function_example",
         ),
-        uuid="uuid_example",
-        created_at="created_at_example",
-        readme={},
-        type="type_example",
-        name="name_example",
-        creator_username="creator_username_example",
-        frozen_at="frozen_at_example",
-        uri="uri_example",
-        base_uri="base_uri_example",
         tags=[
             "tags_example",
         ],
-        annotations={},
+        frozen_at="frozen_at_example",
+        created_at="created_at_example",
+        name="name_example",
     ) # RegisterDataset | 
 
     # example passing only required values which don't have defaults set
@@ -532,7 +532,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **dataset_search_post**
-> [DatasetSQLAlchemy] dataset_search_post(search_dataset)
+> [Dataset] dataset_search_post(search_dataset)
 
 List datasets the user has access to matching the query.
 
@@ -545,7 +545,7 @@ import time
 import dtool_lookup_openapi_client
 from dtool_lookup_openapi_client.api import dataset_api
 from dtool_lookup_openapi_client.model.pagination_metadata import PaginationMetadata
-from dtool_lookup_openapi_client.model.dataset_sql_alchemy import DatasetSQLAlchemy
+from dtool_lookup_openapi_client.model.dataset import Dataset
 from dtool_lookup_openapi_client.model.search_dataset import SearchDataset
 from dtool_lookup_openapi_client.model.error import Error
 from pprint import pprint
@@ -570,15 +570,15 @@ with dtool_lookup_openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dataset_api.DatasetApi(api_client)
     search_dataset = SearchDataset(
-        free_text="free_text_example",
-        uuids=[
-            "uuids_example",
-        ],
         base_uris=[
             "base_uris_example",
         ],
+        free_text="free_text_example",
         creator_usernames=[
             "creator_usernames_example",
+        ],
+        uuids=[
+            "uuids_example",
         ],
         tags=[
             "tags_example",
@@ -616,7 +616,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[DatasetSQLAlchemy]**](DatasetSQLAlchemy.md)
+[**[Dataset]**](Dataset.md)
 
 ### Authorization
 

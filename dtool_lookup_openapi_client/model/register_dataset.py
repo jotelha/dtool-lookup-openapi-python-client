@@ -87,18 +87,18 @@ class RegisterDataset(ModelNormal):
         """
         lazy_import()
         return {
-            'manifest': (Manifest,),  # noqa: E501
-            'uuid': (str,),  # noqa: E501
-            'created_at': (str,),  # noqa: E501
-            'readme': ({str: (bool, date, datetime, dict, float, int, list, str, none_type)},),  # noqa: E501
-            'type': (str,),  # noqa: E501
-            'name': (str,),  # noqa: E501
-            'creator_username': (str,),  # noqa: E501
-            'frozen_at': (str,),  # noqa: E501
-            'uri': (str,),  # noqa: E501
-            'base_uri': (str,),  # noqa: E501
-            'tags': ([str],),  # noqa: E501
             'annotations': ({str: (bool, date, datetime, dict, float, int, list, str, none_type)},),  # noqa: E501
+            'type': (str,),  # noqa: E501
+            'base_uri': (str,),  # noqa: E501
+            'readme': ({str: (bool, date, datetime, dict, float, int, list, str, none_type)},),  # noqa: E501
+            'uri': (str,),  # noqa: E501
+            'creator_username': (str,),  # noqa: E501
+            'uuid': (str,),  # noqa: E501
+            'manifest': (Manifest,),  # noqa: E501
+            'tags': ([str],),  # noqa: E501
+            'frozen_at': (str,),  # noqa: E501
+            'created_at': (str,),  # noqa: E501
+            'name': (str,),  # noqa: E501
         }
 
     @cached_property
@@ -107,18 +107,18 @@ class RegisterDataset(ModelNormal):
 
 
     attribute_map = {
-        'manifest': 'manifest',  # noqa: E501
-        'uuid': 'uuid',  # noqa: E501
-        'created_at': 'created_at',  # noqa: E501
-        'readme': 'readme',  # noqa: E501
-        'type': 'type',  # noqa: E501
-        'name': 'name',  # noqa: E501
-        'creator_username': 'creator_username',  # noqa: E501
-        'frozen_at': 'frozen_at',  # noqa: E501
-        'uri': 'uri',  # noqa: E501
-        'base_uri': 'base_uri',  # noqa: E501
-        'tags': 'tags',  # noqa: E501
         'annotations': 'annotations',  # noqa: E501
+        'type': 'type',  # noqa: E501
+        'base_uri': 'base_uri',  # noqa: E501
+        'readme': 'readme',  # noqa: E501
+        'uri': 'uri',  # noqa: E501
+        'creator_username': 'creator_username',  # noqa: E501
+        'uuid': 'uuid',  # noqa: E501
+        'manifest': 'manifest',  # noqa: E501
+        'tags': 'tags',  # noqa: E501
+        'frozen_at': 'frozen_at',  # noqa: E501
+        'created_at': 'created_at',  # noqa: E501
+        'name': 'name',  # noqa: E501
     }
 
     read_only_vars = {
@@ -162,18 +162,18 @@ class RegisterDataset(ModelNormal):
                                 Animal class but this time we won't travel
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
-            manifest (Manifest): [optional]  # noqa: E501
-            uuid (str): [optional]  # noqa: E501
-            created_at (str): [optional]  # noqa: E501
-            readme ({str: (bool, date, datetime, dict, float, int, list, str, none_type)}): [optional]  # noqa: E501
-            type (str): [optional]  # noqa: E501
-            name (str): [optional]  # noqa: E501
-            creator_username (str): [optional]  # noqa: E501
-            frozen_at (str): [optional]  # noqa: E501
-            uri (str): [optional]  # noqa: E501
-            base_uri (str): [optional]  # noqa: E501
-            tags ([str]): [optional]  # noqa: E501
             annotations ({str: (bool, date, datetime, dict, float, int, list, str, none_type)}): [optional]  # noqa: E501
+            type (str): [optional]  # noqa: E501
+            base_uri (str): [optional]  # noqa: E501
+            readme ({str: (bool, date, datetime, dict, float, int, list, str, none_type)}): [optional]  # noqa: E501
+            uri (str): [optional]  # noqa: E501
+            creator_username (str): [optional]  # noqa: E501
+            uuid (str): [optional]  # noqa: E501
+            manifest (Manifest): [optional]  # noqa: E501
+            tags ([str]): [optional]  # noqa: E501
+            frozen_at (str): [optional]  # noqa: E501
+            created_at (str): [optional]  # noqa: E501
+            name (str): [optional]  # noqa: E501
         """
 
         _check_type = kwargs.pop('_check_type', True)
@@ -259,18 +259,18 @@ class RegisterDataset(ModelNormal):
                                 Animal class but this time we won't travel
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
-            manifest (Manifest): [optional]  # noqa: E501
-            uuid (str): [optional]  # noqa: E501
-            created_at (str): [optional]  # noqa: E501
-            readme ({str: (bool, date, datetime, dict, float, int, list, str, none_type)}): [optional]  # noqa: E501
-            type (str): [optional]  # noqa: E501
-            name (str): [optional]  # noqa: E501
-            creator_username (str): [optional]  # noqa: E501
-            frozen_at (str): [optional]  # noqa: E501
-            uri (str): [optional]  # noqa: E501
-            base_uri (str): [optional]  # noqa: E501
-            tags ([str]): [optional]  # noqa: E501
             annotations ({str: (bool, date, datetime, dict, float, int, list, str, none_type)}): [optional]  # noqa: E501
+            type (str): [optional]  # noqa: E501
+            base_uri (str): [optional]  # noqa: E501
+            readme ({str: (bool, date, datetime, dict, float, int, list, str, none_type)}): [optional]  # noqa: E501
+            uri (str): [optional]  # noqa: E501
+            creator_username (str): [optional]  # noqa: E501
+            uuid (str): [optional]  # noqa: E501
+            manifest (Manifest): [optional]  # noqa: E501
+            tags ([str]): [optional]  # noqa: E501
+            frozen_at (str): [optional]  # noqa: E501
+            created_at (str): [optional]  # noqa: E501
+            name (str): [optional]  # noqa: E501
         """
 
         _check_type = kwargs.pop('_check_type', True)

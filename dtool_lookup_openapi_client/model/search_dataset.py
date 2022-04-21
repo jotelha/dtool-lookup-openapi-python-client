@@ -81,10 +81,10 @@ class SearchDataset(ModelNormal):
                 and the value is attribute type.
         """
         return {
-            'free_text': (str,),  # noqa: E501
-            'uuids': ([str],),  # noqa: E501
             'base_uris': ([str],),  # noqa: E501
+            'free_text': (str,),  # noqa: E501
             'creator_usernames': ([str],),  # noqa: E501
+            'uuids': ([str],),  # noqa: E501
             'tags': ([str],),  # noqa: E501
         }
 
@@ -94,10 +94,10 @@ class SearchDataset(ModelNormal):
 
 
     attribute_map = {
-        'free_text': 'free_text',  # noqa: E501
-        'uuids': 'uuids',  # noqa: E501
         'base_uris': 'base_uris',  # noqa: E501
+        'free_text': 'free_text',  # noqa: E501
         'creator_usernames': 'creator_usernames',  # noqa: E501
+        'uuids': 'uuids',  # noqa: E501
         'tags': 'tags',  # noqa: E501
     }
 
@@ -142,10 +142,10 @@ class SearchDataset(ModelNormal):
                                 Animal class but this time we won't travel
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
-            free_text (str): [optional]  # noqa: E501
-            uuids ([str]): [optional]  # noqa: E501
             base_uris ([str]): [optional]  # noqa: E501
+            free_text (str): [optional]  # noqa: E501
             creator_usernames ([str]): [optional]  # noqa: E501
+            uuids ([str]): [optional]  # noqa: E501
             tags ([str]): [optional]  # noqa: E501
         """
 
@@ -232,10 +232,10 @@ class SearchDataset(ModelNormal):
                                 Animal class but this time we won't travel
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
-            free_text (str): [optional]  # noqa: E501
-            uuids ([str]): [optional]  # noqa: E501
             base_uris ([str]): [optional]  # noqa: E501
+            free_text (str): [optional]  # noqa: E501
             creator_usernames ([str]): [optional]  # noqa: E501
+            uuids ([str]): [optional]  # noqa: E501
             tags ([str]): [optional]  # noqa: E501
         """
 

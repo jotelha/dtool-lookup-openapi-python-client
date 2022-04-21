@@ -81,8 +81,8 @@ class RegisterUser(ModelNormal):
                 and the value is attribute type.
         """
         return {
-            'username': (str,),  # noqa: E501
             'is_admin': (bool,),  # noqa: E501
+            'username': (str,),  # noqa: E501
         }
 
     @cached_property
@@ -91,8 +91,8 @@ class RegisterUser(ModelNormal):
 
 
     attribute_map = {
-        'username': 'username',  # noqa: E501
         'is_admin': 'is_admin',  # noqa: E501
+        'username': 'username',  # noqa: E501
     }
 
     read_only_vars = {
@@ -136,8 +136,8 @@ class RegisterUser(ModelNormal):
                                 Animal class but this time we won't travel
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
-            username (str): [optional]  # noqa: E501
             is_admin (bool): [optional]  # noqa: E501
+            username (str): [optional]  # noqa: E501
         """
 
         _check_type = kwargs.pop('_check_type', True)
@@ -223,8 +223,8 @@ class RegisterUser(ModelNormal):
                                 Animal class but this time we won't travel
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
-            username (str): [optional]  # noqa: E501
             is_admin (bool): [optional]  # noqa: E501
+            username (str): [optional]  # noqa: E501
         """
 
         _check_type = kwargs.pop('_check_type', True)

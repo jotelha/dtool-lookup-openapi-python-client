@@ -81,10 +81,10 @@ class Item(ModelNormal):
                 and the value is attribute type.
         """
         return {
+            'utc_timestamp': (float,),  # noqa: E501
             'relpath': (str,),  # noqa: E501
             'size_in_bytes': (int,),  # noqa: E501
             'hash': (str,),  # noqa: E501
-            'utc_timestamp': (float,),  # noqa: E501
         }
 
     @cached_property
@@ -93,10 +93,10 @@ class Item(ModelNormal):
 
 
     attribute_map = {
+        'utc_timestamp': 'utc_timestamp',  # noqa: E501
         'relpath': 'relpath',  # noqa: E501
         'size_in_bytes': 'size_in_bytes',  # noqa: E501
         'hash': 'hash',  # noqa: E501
-        'utc_timestamp': 'utc_timestamp',  # noqa: E501
     }
 
     read_only_vars = {
@@ -140,10 +140,10 @@ class Item(ModelNormal):
                                 Animal class but this time we won't travel
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
+            utc_timestamp (float): [optional]  # noqa: E501
             relpath (str): [optional]  # noqa: E501
             size_in_bytes (int): [optional]  # noqa: E501
             hash (str): [optional]  # noqa: E501
-            utc_timestamp (float): [optional]  # noqa: E501
         """
 
         _check_type = kwargs.pop('_check_type', True)
@@ -229,10 +229,10 @@ class Item(ModelNormal):
                                 Animal class but this time we won't travel
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
+            utc_timestamp (float): [optional]  # noqa: E501
             relpath (str): [optional]  # noqa: E501
             size_in_bytes (int): [optional]  # noqa: E501
             hash (str): [optional]  # noqa: E501
-            utc_timestamp (float): [optional]  # noqa: E501
         """
 
         _check_type = kwargs.pop('_check_type', True)
